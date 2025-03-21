@@ -27,7 +27,7 @@
 
 1. Clonez le dépôt :
    ```sh
-   git clone https://github.com/votre-utilisateur/x-clone-next-app.git
+   git clone https://github.com/gery-guedegbe/x-clone-next-app.git
    cd x-clone-next-app
    ```
 2. Installer les dépendances :
