@@ -1,18 +1,11 @@
 import Image from "./Image";
-import Post from "./Post";
 
 const Comments = () => {
   return (
     <div className="">
       <form className="flex items-center justify-between gap-4 p-4">
         <div className="relative h-10 w-10 overflow-hidden rounded-full">
-          <Image
-            path="general/profile.png"
-            alt="Lama Dev"
-            w={100}
-            h={100}
-            tr={true}
-          />
+          <Image path="/general/profile.png" alt="" w={100} h={100} tr={true} />
         </div>
 
         <input
@@ -25,13 +18,6 @@ const Comments = () => {
           Reply
         </button>
       </form>
-
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
     </div>
   );
 };
