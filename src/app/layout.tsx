@@ -15,6 +15,7 @@ export default function AppLayout({
       <QueryProvider>
         <PostProvider>
           <html lang="en" suppressHydrationWarning>
+            <title>X-Clone</title>
             <body>{children}</body>
           </html>
         </PostProvider>
