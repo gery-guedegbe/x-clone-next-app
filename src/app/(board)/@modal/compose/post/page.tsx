@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "@/components/Image";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const PostModal = () => {
@@ -31,13 +31,7 @@ const PostModal = () => {
         {/* CENTER */}
         <div className="flex gap-4 py-8">
           <div className="relative h-10 w-10 overflow-hidden rounded-full">
-            <Image
-              path="general/profile.png"
-              alt="Gery GUEDEGBE"
-              w={100}
-              h={100}
-              tr={true}
-            />
+            <Image src="/general/profile.png" alt="" width={100} height={100} />
           </div>
 
           <input
@@ -51,50 +45,50 @@ const PostModal = () => {
         <div className="border-borderGray flex flex-wrap items-center justify-between gap-4 border-t pt-4">
           <div className="flex flex-wrap gap-4">
             <Image
-              path="icons/image.svg"
+              src="/icons/image.svg"
               alt=""
-              w={20}
-              h={20}
+              width={20}
+              height={20}
               className="cursor-pointer"
             />
 
             <Image
-              path="icons/gif.svg"
+              src="/icons/gif.svg"
               alt=""
-              w={20}
-              h={20}
+              width={20}
+              height={20}
               className="cursor-pointer"
             />
 
             <Image
-              path="icons/poll.svg"
+              src="/icons/poll.svg"
               alt=""
-              w={20}
-              h={20}
+              width={20}
+              height={20}
               className="cursor-pointer"
             />
 
             <Image
-              path="icons/emoji.svg"
+              src="/icons/emoji.svg"
               alt=""
-              w={20}
-              h={20}
+              width={20}
+              height={20}
               className="cursor-pointer"
             />
 
             <Image
-              path="icons/schedule.svg"
+              src="/icons/schedule.svg"
               alt=""
-              w={20}
-              h={20}
+              width={20}
+              height={20}
               className="cursor-pointer"
             />
 
             <Image
-              path="icons/location.svg"
+              src="/icons/location.svg"
               alt=""
-              w={20}
-              h={20}
+              width={20}
+              height={20}
               className="cursor-pointer"
             />
           </div>
