@@ -3,15 +3,6 @@ import PostInfo from "./PostInfo";
 import PostInteractions from "./PostInteractions";
 import Link from "next/link";
 
-interface FileDetailsResponse {
-  width: number;
-  height: number;
-  filePath: string;
-  url: string;
-  fileType: string;
-  customMetadata?: { sensitive: boolean };
-}
-
 const ProfilePost = ({ type }: { type?: "status" | "comment" }) => {
   return (
     <div className="flex h-full w-full flex-col items-start gap-4">

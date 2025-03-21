@@ -27,7 +27,7 @@ const SignUpPage = () => {
         <h1 className="text-2xl">Join today.</h1>
 
         <button
-          onClick={() => (window.location.href = "http://localhost:3000")}
+          onClick={() => (window.location.href = "/")}
           className="flex flex-col gap-4"
         >
           <div className="flex w-72 cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 font-bold text-black">
@@ -56,7 +56,7 @@ const SignUpPage = () => {
           </div>
 
           <button
-            onClick={() => (window.location.href = "http://localhost:3000")}
+            onClick={() => (window.location.href = "/")}
             className="flex w-72 cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 font-bold text-black"
           >
             <svg viewBox="0 0 24 24" width={24} height={24}>
@@ -87,7 +87,7 @@ const SignUpPage = () => {
               />
             </div>
             <button
-              onClick={() => (window.location.href = "http://localhost:3000")}
+              onClick={() => (window.location.href = "/")}
               className="bg-iconBlue w-72 cursor-pointer rounded-full p-2 text-center font-bold text-white"
             >
               Sign up

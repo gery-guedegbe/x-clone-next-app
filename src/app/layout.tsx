@@ -2,7 +2,6 @@
 
 import QueryProvider from "@/providers/QueryProvider";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
 import { PostProvider } from "@/context/PostContext";
 
 export default function AppLayout({
@@ -11,15 +10,13 @@ export default function AppLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <QueryProvider>
-        <PostProvider>
-          <html lang="en" suppressHydrationWarning>
-            <title>X-Clone</title>
-            <body>{children}</body>
-          </html>
-        </PostProvider>
-      </QueryProvider>
-    </ClerkProvider>
+    <QueryProvider>
+      <PostProvider>
+        <html lang="en" suppressHydrationWarning>
+          <title>X-Clone</title>
+          <body>{children}</body>
+        </html>
+      </PostProvider>
+    </QueryProvider>
   );
 }

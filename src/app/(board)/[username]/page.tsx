@@ -2,12 +2,9 @@
 
 import Image from "next/image";
 import ProfilePost from "@/components/ProfilePost";
-import { usePostContext } from "@/context/PostContext";
 import Link from "next/link";
 
 const UserPage = () => {
-  const { addPost, posts } = usePostContext();
-
   return (
     <div className="">
       {/* PROFILE TITLE */}

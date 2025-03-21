@@ -1,14 +1,10 @@
 "use client";
 
-import { useClerk } from "@clerk/nextjs";
 import Link from "next/link";
 import { useState } from "react";
-import Image from "./Image";
 
 const Logout = () => {
   const [open, setOpen] = useState(false);
-
-  const { signOut } = useClerk();
 
   return (
     <div className="xxl:block relative hidden">
@@ -48,8 +44,8 @@ const Logout = () => {
           <hr />
 
           <button
-            className="rounded-md bg-black px-2 py-1"
-            onClick={() => signOut()}
+            className="cursor-pointer rounded-md bg-black px-2 py-1"
+            onClick={() => (window.location.href = "/sign-in")}
           >
             Logout
           </button>

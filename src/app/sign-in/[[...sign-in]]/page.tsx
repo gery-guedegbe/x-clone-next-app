@@ -27,7 +27,7 @@ const SignInPage = () => {
 
         {/* Sign in with Google */}
         <button
-          onClick={() => (window.location.href = "http://localhost:3000")}
+          onClick={() => (window.location.href = "/")}
           className="flex w-72 cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 font-bold text-black"
         >
           <svg viewBox="0 0 24 24" width={24} height={24}>
