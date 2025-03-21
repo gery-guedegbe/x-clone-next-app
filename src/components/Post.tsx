@@ -2,26 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import PostInfo from "./PostInfo";
 import PostInteractions from "./PostInteractions";
-import { Post as PostType } from "@prisma/client";
-
-type UserSummary = {
-  displayName: string | null;
-  username: string;
-  img: string | null;
-};
-
-type Engagement = {
-  _count: { likes: number; rePosts: number; comments: number };
-  likes: { id: number }[];
-  rePosts: { id: number }[];
-  saves: { id: number }[];
-};
-
-type PostWithDetails = PostType &
-  Engagement & {
-    user: UserSummary;
-    rePost?: (PostType & Engagement & { user: UserSummary }) | null;
-  };
 
 type PostProps = {
   post: {
