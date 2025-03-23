@@ -6,7 +6,6 @@ import RightBar from "@/components/RightBar";
 
 export default function BoradLayout({
   children,
-  modal,
 }: Readonly<{
   children: React.ReactNode;
   modal: React.ReactNode;
@@ -19,7 +18,6 @@ export default function BoradLayout({
 
       <div className="border-borderGray flex-1 border-x-[1px] lg:min-w-[600px]">
         {children}
-        {modal}
       </div>
 
       <div className="bg-blue ml-4 hidden flex-1 md:ml-8 lg:flex">

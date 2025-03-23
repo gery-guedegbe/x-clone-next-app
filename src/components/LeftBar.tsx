@@ -54,7 +54,7 @@ const LeftBar = () => {
         </Link>
 
         <Link
-          href="/compose/post"
+          href="/"
           className="xxl:block hidden cursor-pointer rounded-full bg-white px-20 py-2 font-bold text-black"
         >
           Post
