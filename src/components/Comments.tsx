@@ -1,11 +1,11 @@
-import Image from "./Image";
+import Image from "next/image";
 
 const Comments = () => {
   return (
     <div className="">
       <form className="flex items-center justify-between gap-4 p-4">
         <div className="relative h-10 w-10 overflow-hidden rounded-full">
-          <Image path="/general/profile.png" alt="" w={100} h={100} tr={true} />
+          <Image src="/general/profile.png" alt="" width={100} height={100} />
         </div>
 
         <input

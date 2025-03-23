@@ -1,5 +1,5 @@
 import Comments from "@/components/Comments";
-import Image from "@/components/Image";
+import Image from "next/image";
 import Link from "next/link";
 
 const StatusPage = () => {
@@ -7,7 +7,7 @@ const StatusPage = () => {
     <div className="">
       <div className="sticky top-0 z-10 flex items-center gap-8 bg-[#00000084] p-4 backdrop-blur-md">
         <Link href="/">
-          <Image path="icons/back.svg" alt="back" w={24} h={24} />
+          <Image src="icons/back.svg" alt="back" width={24} height={24} />
         </Link>
 
         <h1 className="text-lg font-bold">Post</h1>
