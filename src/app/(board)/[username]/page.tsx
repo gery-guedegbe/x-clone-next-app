@@ -10,7 +10,7 @@ const UserPage = () => {
       {/* PROFILE TITLE */}
       <div className="sticky top-0 z-10 flex items-center gap-8 bg-[#00000084] p-4 backdrop-blur-md">
         <Link href="/">
-          <Image src="/general/noCover.png" alt="back" width={24} height={24} />
+          <Image src="/icons/back.svg" alt="back" width={24} height={24} />
         </Link>
 
         <h1 className="text-lg font-bold">Jonh DOE</h1>
